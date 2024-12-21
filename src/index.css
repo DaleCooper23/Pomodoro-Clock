@@ -1,0 +1,113 @@
+:root {
+  --white: #F1F1F1;
+  --black: #202020;
+  --gray: #7E909A;
+  --blue: #1C4E80;
+  --red: #941345;
+}
+* {
+  margin: 0;
+}
+#container {
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+h1 {
+  margin: 20px;
+  text-align: center;
+  font-size: 60px;
+  color: var(--white);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#timer {
+  background-color: var(--white);
+  border-radius: 10px;
+  width: 300px;
+  height: 130px;
+  display: block;
+  text-align: center;
+  padding: 5px;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#time-left {
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 60px;
+}
+#options > button {
+  width: 100px;
+  height: 50px;
+  border: 0;
+  margin: 20px;
+  cursor: pointer;
+  transition: transform ease 2s;
+  border-radius: 5px;
+  color: var(--white);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+}
+#options > button:hover {
+  transform: scale(0.90);
+}
+#reset {
+  background-color: var(--red);
+}
+#start-stop {
+  background-color: var(--blue);
+}
+#sessions {
+  color: var(--white);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(2, 160px);
+  font-size: 20px;
+  margin-top: 10px;
+}
+#break {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#session {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+}
+#break > div > button {
+  width: 35px;
+  height: 25px;
+  border-radius: 5px; 
+  margin: 5px;
+  font-size: 20px;
+  border: 0;
+  color: var(--white);
+  cursor: pointer;
+}
+#session > div > button {
+  width: 35px;
+  height: 25px;
+  border-radius: 5px; 
+  margin: 5px;
+  font-size: 20px;
+  border: 0;
+  color: var(--white);
+  cursor: pointer;
+}
+#break-increment {
+  background-color: var(--blue);
+}
+#break-decrement {
+  background-color: var(--red);
+}
+#session-increment {
+  background-color: var(--blue);
+}
+#session-decrement {
+  background-color: var(--red);
+}
